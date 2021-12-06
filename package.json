@@ -6,6 +6,9 @@
   "author": "Max Milton <max@happycode.ltd>",
   "license": "MIT",
   "main": "stylelint.config.js",
+  "files": [
+    "stylelint.config.js"
+  ],
   "scripts": {
     "lint": "pnpm run lint:js && pnpm run lint:ts",
     "lint:js": "eslint --ignore-path .gitignore --ext .cjs,.js,.mjs,.ts .",

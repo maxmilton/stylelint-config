@@ -1,7 +1,4 @@
-/.eslintrc.cjs
-/.github/
-/.vscode/
-/coverage/
-/pretter.config.js
-/test/
-/tsconfig.json
+.github/
+.vscode/
+coverage/
+test/
