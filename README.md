@@ -4,21 +4,39 @@
 
 # @maxmilton/stylelint-config
 
-Stylelint configuration with support for [XCSS via ekscss](https://github.com/maxmilton/ekscss).
+Stylelint configuration with support for [XCSS via ekscss](https://github.com/maxmilton/ekscss) and an opinionated property order.
+
+Property order defined as:
+
+> Note: Very new, seldom used, or poorly supported properties are not included in the groups.
+
+1. Position
+1. Box model & layout
+1. Typography
+1. Remaining properties sorted alphabetically
+
+Based on of the best ideas from:
+
+- <https://github.com/ream88/stylelint-config-idiomatic-order>
+- <https://github.com/hudochenkov/stylelint-config-hudochenkov>
+- <https://github.com/constverum/stylelint-config-rational-order>
+- <https://github.com/stormwarning/stylelint-config-recess-order>
 
 ## Installation
 
+Add dependency to your project:
+
 ```sh
-npm install @maxmilton/stylelint-config
+npm install --save-dev @maxmilton/stylelint-config
 ```
 
 or
 
 ```sh
-yarn add @maxmilton/stylelint-config
+yarn add --save-dev @maxmilton/stylelint-config
 ```
 
-Add to your stylelint configuration:
+Add to your stylelint configuration (adding `stylelint-config-standard` is also recommended):
 
 `pacakge.json`:
 
