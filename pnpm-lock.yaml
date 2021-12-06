@@ -12,6 +12,7 @@ specifiers:
   postcss-ekscss: 0.0.1
   prettier: 2.5.1
   stylelint: 14.1.0
+  stylelint-config-standard: 24.0.0
   stylelint-order: 5.0.0
   tsm: 2.2.1
   typescript: 4.5.2
@@ -32,6 +33,7 @@ devDependencies:
   eslint-plugin-unicorn: 39.0.0_eslint@8.4.0
   prettier: 2.5.1
   stylelint: 14.1.0
+  stylelint-config-standard: 24.0.0_stylelint@14.1.0
   tsm: 2.2.1
   typescript: 4.5.2
   uvu: 0.5.2
@@ -2393,6 +2395,23 @@ packages:
 
   /style-search/0.1.0:
     resolution: {integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=}
+    dev: true
+
+  /stylelint-config-recommended/6.0.0_stylelint@14.1.0:
+    resolution: {integrity: sha512-ZorSSdyMcxWpROYUvLEMm0vSZud2uB7tX1hzBZwvVY9SV/uly4AvvJPPhCcymZL3fcQhEQG5AELmrxWqtmzacw==}
+    peerDependencies:
+      stylelint: ^14.0.0
+    dependencies:
+      stylelint: 14.1.0
+    dev: true
+
+  /stylelint-config-standard/24.0.0_stylelint@14.1.0:
+    resolution: {integrity: sha512-+RtU7fbNT+VlNbdXJvnjc3USNPZRiRVp/d2DxOF/vBDDTi0kH5RX2Ny6errdtZJH3boO+bmqIYEllEmok4jiuw==}
+    peerDependencies:
+      stylelint: ^14.0.0
+    dependencies:
+      stylelint: 14.1.0
+      stylelint-config-recommended: 6.0.0_stylelint@14.1.0
     dev: true
 
   /stylelint-order/5.0.0_stylelint@14.1.0:
