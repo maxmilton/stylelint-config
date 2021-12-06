@@ -1,3 +1,5 @@
+// Based on https://github.com/constverum/stylelint-config-rational-order but
+// with customisations, mostly around fonts
 const propertiesOrder = [
   '#apply',
   {
