@@ -1,0 +1,5 @@
+.github/
+.vscode/
+coverage/
+test/
+pretter.config.js
