@@ -1,7 +1,7 @@
 {
   "name": "@maxmilton/stylelint-config",
   "version": "0.0.1",
-  "description": "Stylelint config with support for XCSS via ekscss",
+  "description": "Stylelint configuration with support for XCSS via ekscss",
   "repository": "maxmilton/stylelint-config",
   "author": "Max Milton <max@happycode.ltd>",
   "license": "MIT",
