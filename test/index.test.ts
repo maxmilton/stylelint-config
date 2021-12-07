@@ -59,7 +59,7 @@ test('does not error on "#apply" property', async () => {
 
 test('crashes on XCSS expression without shared config', async () => {
   const result = await stylelint.lint({
-    files: ['test/fixtures/simple.xcss'], // must use file so shared config uses matching override
+    files: ['test/fixtures/basic.xcss'], // must use file so shared config uses matching override
     config: baseConfig,
   });
   assert.is(result.errored, true);
@@ -70,7 +70,7 @@ test('crashes on XCSS expression without shared config', async () => {
 
 test('does not crash on XCSS expression', async () => {
   const result = await stylelint.lint({
-    files: ['test/fixtures/simple.xcss'],
+    files: ['test/fixtures/basic.xcss'],
     config,
   });
   assert.is(result.errored, false);

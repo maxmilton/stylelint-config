@@ -1,3 +1,0 @@
-body {
-  color: ${x.color.red};
-}
