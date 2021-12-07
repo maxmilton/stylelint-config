@@ -9,7 +9,7 @@ specifiers:
   eslint-config-airbnb-typescript: 16.1.0
   eslint-plugin-import: 2.25.3
   eslint-plugin-unicorn: 39.0.0
-  postcss-ekscss: 0.0.1
+  postcss-ekscss: 0.0.2
   prettier: 2.5.1
   stylelint: 14.1.0
   stylelint-config-standard: 24.0.0
@@ -19,7 +19,7 @@ specifiers:
   uvu: 0.5.2
 
 dependencies:
-  postcss-ekscss: 0.0.1
+  postcss-ekscss: 0.0.2
   stylelint-order: 5.0.0_stylelint@14.1.0
 
 devDependencies:
@@ -2078,8 +2078,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss-ekscss/0.0.1:
-    resolution: {integrity: sha512-k5xfKMrZtjXWUfuPZs72u1sy35N1gq2mCJl4bRjQp7MYWcH0FqaNjf3VMvlRfhKXZdDzie4/6G5mGgBgWGuJxg==}
+  /postcss-ekscss/0.0.2:
+    resolution: {integrity: sha512-MpQ5YZxvxt5n+YOjtCElFI/we0b7wuJ7M+aKYJqrPJH+ZuRIz5HHTpFt1P3MeFb7c+BCQMl2/WB28Z0zldEl4w==}
     peerDependencies:
       ekscss: ^0.0.10
       postcss: ^8.0.0
