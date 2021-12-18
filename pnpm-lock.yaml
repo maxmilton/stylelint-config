@@ -4,14 +4,12 @@ specifiers:
   '@types/node': 17.0.0
   '@typescript-eslint/eslint-plugin': 5.7.0
   '@typescript-eslint/parser': 5.7.0
-  ekscss: ^0.0.12
   eslint: 8.5.0
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 16.1.0
   eslint-plugin-import: 2.25.3
   eslint-plugin-unicorn: 39.0.0
-  postcss: ^8.4.5
-  postcss-ekscss: ^0.0.4
+  postcss-ekscss: ^0.0.5
   prettier: 2.5.1
   stylelint: 14.1.0
   stylelint-config-standard: 24.0.0
@@ -21,9 +19,7 @@ specifiers:
   uvu: 0.5.2
 
 dependencies:
-  ekscss: 0.0.12
-  postcss: 8.4.5
-  postcss-ekscss: 0.0.4_ekscss@0.0.12+postcss@8.4.5
+  postcss-ekscss: 0.0.5
   stylelint-order: 5.0.0_stylelint@14.1.0
 
 devDependencies:
@@ -329,10 +325,6 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
-
-  /@types/stylis/4.0.2:
-    resolution: {integrity: sha512-wtckGuk1eXUlUz0Qb1eXHG37Z7HWT2GfMdqRf8F/ifddTwadSS9Jwsqi4qtXk7cP7MtoyGVIHPElFCLc6HItbg==}
-    dev: false
 
   /@typescript-eslint/eslint-plugin/5.7.0_a6f6159640504abdd3de077f8bcadb33:
     resolution: {integrity: sha512-8RTGBpNn5a9M628wBPrCbJ+v3YTEOE2qeZb7TDkGKTDXSj36KGRg92SpFFaR/0S3rSXQxM0Og/kV9EyadsYSBg==}
@@ -778,14 +770,6 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
-
-  /ekscss/0.0.12:
-    resolution: {integrity: sha512-WuTgu9V5mDm+KXSbr7o14FJzm2KZ+D1kUikIwwRKqbS/O246VWnBROkXwar1CwOW6z6/6DVF/+M81rMcjB7BNQ==}
-    dependencies:
-      '@types/stylis': 4.0.2
-      source-map: 0.7.3
-      stylis: 4.0.13
-    dev: false
 
   /electron-to-chromium/1.4.24:
     resolution: {integrity: sha512-erwx5r69B/WFfFuF2jcNN0817BfDBdC4765kQ6WltOMuwsimlQo3JTEq0Cle+wpHralwdeX3OfAtw/mHxPK0Wg==}
@@ -2076,14 +2060,13 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss-ekscss/0.0.4_ekscss@0.0.12+postcss@8.4.5:
-    resolution: {integrity: sha512-nWihVXSFCglewr8t4Z5rvO98MCh4s76yL6GNDzPmxGhbJUlP5cXZO1SH/HsQROWxLYfkDuv31bwZlTSJ27Z+0g==}
+  /postcss-ekscss/0.0.5:
+    resolution: {integrity: sha512-agbtRXL5ErEjmz3gGjslhAMT242yv3ivB0GWt4Bl0Flx4Lm3P6c5ReM8Zz9Aep7dfBleq6qs12HtparOllzCMg==}
     peerDependencies:
-      ekscss: ^0.0.12
       postcss: ^8.0.0
-    dependencies:
-      ekscss: 0.0.12
-      postcss: 8.4.5
+    peerDependenciesMeta:
+      postcss:
+        optional: true
     dev: false
 
   /postcss-media-query-parser/0.2.3:
@@ -2320,11 +2303,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /source-map/0.7.3:
-    resolution: {integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==}
-    engines: {node: '>= 8'}
-    dev: false
-
   /spdx-correct/3.1.1:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==}
     dependencies:
@@ -2476,10 +2454,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /stylis/4.0.13:
-    resolution: {integrity: sha512-xGPXiFVl4YED9Jh7Euv2V220mriG9u4B2TA6Ybjc1catrstKD2PpIdU3U0RKpkVBC2EhmL/F0sPCr9vrFTNRag==}
-    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
