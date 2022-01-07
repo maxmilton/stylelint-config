@@ -54,4 +54,4 @@ MIT license. See [LICENSE](https://github.com/maxmilton/new-tab/blob/master/LICE
 
 ---
 
-© 2021 [Max Milton](https://maxmilton.com)
+© 2022 [Max Milton](https://maxmilton.com)
