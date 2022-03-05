@@ -11,7 +11,7 @@ specifiers:
   eslint-plugin-unicorn: 41.0.0
   postcss-ekscss: ^0.0.5
   prettier: 2.5.1
-  stylelint: 14.3.0
+  stylelint: 14.5.3
   stylelint-config-standard: 24.0.0
   stylelint-order: ^5.0.0
   tsm: 2.2.1
@@ -20,7 +20,7 @@ specifiers:
 
 dependencies:
   postcss-ekscss: 0.0.5
-  stylelint-order: 5.0.0_stylelint@14.3.0
+  stylelint-order: 5.0.0_stylelint@14.5.3
 
 devDependencies:
   '@types/node': 17.0.8
@@ -32,8 +32,8 @@ devDependencies:
   eslint-plugin-import: 2.25.4_eslint@8.10.0
   eslint-plugin-unicorn: 41.0.0_eslint@8.10.0
   prettier: 2.5.1
-  stylelint: 14.3.0
-  stylelint-config-standard: 24.0.0_stylelint@14.3.0
+  stylelint: 14.5.3
+  stylelint-config-standard: 24.0.0_stylelint@14.5.3
   tsm: 2.2.1
   typescript: 4.6.2
   uvu: 0.5.3
@@ -493,6 +493,11 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /css-functions-list/3.0.1:
+    resolution: {integrity: sha512-PriDuifDt4u4rkDgnqRCLnjfMatufLmWNfQnGCq34xZwpY3oabwhB9SqRBmuvWUgndbemCFlKqg+nO7C2q0SBw==}
+    engines: {node: '>=12.22'}
     dev: true
 
   /cssesc/3.0.0:
@@ -1437,10 +1442,6 @@ packages:
       has-symbols: 1.0.2
     dev: true
 
-  /is-typedarray/1.0.0:
-    resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
-    dev: true
-
   /is-weakref/1.0.2:
     resolution: {integrity: sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==}
     dependencies:
@@ -2129,41 +2130,42 @@ packages:
     resolution: {integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=}
     dev: true
 
-  /stylelint-config-recommended/6.0.0_stylelint@14.3.0:
+  /stylelint-config-recommended/6.0.0_stylelint@14.5.3:
     resolution: {integrity: sha512-ZorSSdyMcxWpROYUvLEMm0vSZud2uB7tX1hzBZwvVY9SV/uly4AvvJPPhCcymZL3fcQhEQG5AELmrxWqtmzacw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      stylelint: 14.3.0
+      stylelint: 14.5.3
     dev: true
 
-  /stylelint-config-standard/24.0.0_stylelint@14.3.0:
+  /stylelint-config-standard/24.0.0_stylelint@14.5.3:
     resolution: {integrity: sha512-+RtU7fbNT+VlNbdXJvnjc3USNPZRiRVp/d2DxOF/vBDDTi0kH5RX2Ny6errdtZJH3boO+bmqIYEllEmok4jiuw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      stylelint: 14.3.0
-      stylelint-config-recommended: 6.0.0_stylelint@14.3.0
+      stylelint: 14.5.3
+      stylelint-config-recommended: 6.0.0_stylelint@14.5.3
     dev: true
 
-  /stylelint-order/5.0.0_stylelint@14.3.0:
+  /stylelint-order/5.0.0_stylelint@14.5.3:
     resolution: {integrity: sha512-OWQ7pmicXufDw5BlRqzdz3fkGKJPgLyDwD1rFY3AIEfIH/LQY38Vu/85v8/up0I+VPiuGRwbc2Hg3zLAsJaiyw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
       postcss: 8.4.6
       postcss-sorting: 7.0.1_postcss@8.4.6
-      stylelint: 14.3.0
+      stylelint: 14.5.3
     dev: false
 
-  /stylelint/14.3.0:
-    resolution: {integrity: sha512-PZXSwtJe4f4qBPWBwAbHL0M0Qjrv8iHN+cLpUNsffaVMS3YzpDDRI73+2lsqLAYfQEzxRwpll6BDKImREbpHWA==}
+  /stylelint/14.5.3:
+    resolution: {integrity: sha512-omHETL+kGHR+fCXFK1SkZD/A+emCP9esggAdWEl8GPjTNeyRYj+H6uetRDcU+7E451zwWiUYGVAX+lApsAZgsQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
       balanced-match: 2.0.0
       colord: 2.9.2
       cosmiconfig: 7.0.1
+      css-functions-list: 3.0.1
       debug: 4.3.3
       execall: 2.0.0
       fast-glob: 3.2.11
@@ -2200,7 +2202,7 @@ packages:
       svg-tags: 1.0.0
       table: 6.8.0
       v8-compile-cache: 2.3.0
-      write-file-atomic: 4.0.0
+      write-file-atomic: 4.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2321,10 +2323,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /typedarray-to-buffer/4.0.0:
-    resolution: {integrity: sha512-6dOYeZfS3O9RtRD1caom0sMxgK59b27+IwoNy8RDPsmslSGOyU+mpTamlaIW7aNKi90ZQZ9DFaZL3YRoiSCULQ==}
-    dev: true
-
   /typescript/4.6.2:
     resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}
     engines: {node: '>=4.2.0'}
@@ -2406,14 +2404,12 @@ packages:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: true
 
-  /write-file-atomic/4.0.0:
-    resolution: {integrity: sha512-JhcWoKffJNF7ivO9yflBhc7tn3wKnokMUfWpBriM9yCXj4ePQnRPcWglBkkg1AHC8nsW/EfxwwhqsLtOy59djA==}
+  /write-file-atomic/4.0.1:
+    resolution: {integrity: sha512-nSKUxgAbyioruk6hU87QzVbY279oYT6uiwgDoujth2ju4mJ+TZau7SQBhtbTmUyuNYTuXnSyRn66FV0+eCgcrQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16}
     dependencies:
       imurmurhash: 0.1.4
-      is-typedarray: 1.0.0
       signal-exit: 3.0.7
-      typedarray-to-buffer: 4.0.0
     dev: true
 
   /yallist/4.0.0:
