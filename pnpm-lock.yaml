@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': 17.0.8
+  '@types/node': 17.0.21
   '@typescript-eslint/eslint-plugin': 5.13.0
   '@typescript-eslint/parser': 5.13.0
   eslint: 8.10.0
@@ -23,7 +23,7 @@ dependencies:
   stylelint-order: 5.0.0_stylelint@14.5.3
 
 devDependencies:
-  '@types/node': 17.0.8
+  '@types/node': 17.0.21
   '@typescript-eslint/eslint-plugin': 5.13.0_33fffc354ccfa91fbe7d1677b9395a0a
   '@typescript-eslint/parser': 5.13.0_eslint@8.10.0+typescript@4.6.2
   eslint: 8.10.0
@@ -126,8 +126,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/17.0.8:
-    resolution: {integrity: sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==}
+  /@types/node/17.0.21:
+    resolution: {integrity: sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
