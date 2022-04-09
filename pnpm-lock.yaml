@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-import: 2.25.4
   eslint-plugin-unicorn: 41.0.0
   postcss-ekscss: ^0.0.5
-  prettier: 2.5.1
+  prettier: 2.6.2
   stylelint: 14.5.3
   stylelint-config-standard: 25.0.0
   stylelint-order: ^5.0.0
@@ -31,7 +31,7 @@ devDependencies:
   eslint-config-airbnb-typescript: 16.1.0_1f89b239ee6f27b6e291da702a798384
   eslint-plugin-import: 2.25.4_eslint@8.13.0
   eslint-plugin-unicorn: 41.0.0_eslint@8.13.0
-  prettier: 2.5.1
+  prettier: 2.6.2
   stylelint: 14.5.3
   stylelint-config-standard: 25.0.0_stylelint@14.5.3
   tsm: 2.2.1
@@ -1895,8 +1895,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.5.1:
-    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
