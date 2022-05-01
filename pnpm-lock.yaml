@@ -264,16 +264,16 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /acorn-jsx/5.3.2_acorn@8.7.0:
+  /acorn-jsx/5.3.2_acorn@8.7.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.7.0
+      acorn: 8.7.1
     dev: true
 
-  /acorn/8.7.0:
-    resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
+  /acorn/8.7.1:
+    resolution: {integrity: sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -620,7 +620,7 @@ packages:
       object.assign: 4.1.2
       string.prototype.trimend: 1.0.4
       string.prototype.trimstart: 1.0.4
-      unbox-primitive: 1.0.1
+      unbox-primitive: 1.0.2
     dev: true
 
   /es-shim-unscopables/1.0.0:
@@ -1030,8 +1030,8 @@ packages:
     resolution: {integrity: sha512-bvdyLmJMfwkV3NCRl5ZhJf22zBFo1y8bYh3VYb+bfzqNB4Je68P2sSuXyuFquzWLebHpNd2/d5uv7yoP9ISnGQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.7.0
-      acorn-jsx: 5.3.2_acorn@8.7.0
+      acorn: 8.7.1
+      acorn-jsx: 5.3.2_acorn@8.7.1
       eslint-visitor-keys: 3.3.0
     dev: true
 
@@ -1870,13 +1870,13 @@ packages:
     resolution: {integrity: sha1-Kcy8fDfe36wwTp//C/FZaz9qDk4=}
     dev: true
 
-  /postcss-safe-parser/6.0.0_postcss@8.4.12:
+  /postcss-safe-parser/6.0.0_postcss@8.4.13:
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.12
+      postcss: 8.4.13
     dev: true
 
   /postcss-selector-parser/6.0.10:
@@ -1887,20 +1887,20 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-sorting/7.0.1_postcss@8.4.12:
+  /postcss-sorting/7.0.1_postcss@8.4.13:
     resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
     peerDependencies:
       postcss: ^8.3.9
     dependencies:
-      postcss: 8.4.12
+      postcss: 8.4.13
     dev: false
 
   /postcss-value-parser/4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss/8.4.12:
-    resolution: {integrity: sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==}
+  /postcss/8.4.13:
+    resolution: {integrity: sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.3
@@ -2184,8 +2184,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      postcss: 8.4.12
-      postcss-sorting: 7.0.1_postcss@8.4.12
+      postcss: 8.4.13
+      postcss-sorting: 7.0.1_postcss@8.4.13
       stylelint: 14.8.1
     dev: false
 
@@ -2219,10 +2219,10 @@ packages:
       normalize-path: 3.0.0
       normalize-selector: 0.2.0
       picocolors: 1.0.0
-      postcss: 8.4.12
+      postcss: 8.4.13
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0_postcss@8.4.12
+      postcss-safe-parser: 6.0.0_postcss@8.4.13
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
@@ -2361,10 +2361,10 @@ packages:
     hasBin: true
     dev: true
 
-  /unbox-primitive/1.0.1:
-    resolution: {integrity: sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw==}
+  /unbox-primitive/1.0.2:
+    resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
-      function-bind: 1.1.1
+      call-bind: 1.0.2
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
