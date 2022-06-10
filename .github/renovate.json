@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:js-lib", "github>maxmilton/renovate-config"],
   "schedule": ["before 3am on the first day of the month"]
 }
