@@ -16,7 +16,7 @@ specifiers:
   stylelint-order: ^5.0.0
   tsm: 2.2.2
   typescript: 4.7.4
-  uvu: 0.5.4
+  uvu: 0.5.6
 
 dependencies:
   postcss-ekscss: 0.0.6
@@ -36,7 +36,7 @@ devDependencies:
   stylelint-config-standard: 26.0.0_stylelint@14.9.1
   tsm: 2.2.2
   typescript: 4.7.4
-  uvu: 0.5.4
+  uvu: 0.5.6
 
 packages:
 
@@ -2284,8 +2284,8 @@ packages:
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  /uvu/0.5.4:
-    resolution: {integrity: sha512-x1CyUjcP9VKaNPhjeB3FIc/jqgLsz2Q9LFhRzUTu/jnaaHILEGNuE0XckQonl8ISLcwyk9I2EZvWlYsQnwxqvQ==}
+  /uvu/0.5.6:
+    resolution: {integrity: sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
