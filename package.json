@@ -30,7 +30,7 @@
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-unicorn": "43.0.2",
+    "eslint-plugin-unicorn": "44.0.2",
     "prettier": "2.7.1",
     "stylelint": "14.13.0",
     "stylelint-config-standard": "28.0.0",
