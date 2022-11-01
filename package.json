@@ -23,7 +23,7 @@
     "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "18.7.14",
+    "@types/node": "18.11.9",
     "@typescript-eslint/eslint-plugin": "5.38.1",
     "@typescript-eslint/parser": "5.38.1",
     "eslint": "8.26.0",
