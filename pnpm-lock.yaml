@@ -8,7 +8,7 @@ specifiers:
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 17.0.0
   eslint-plugin-import: 2.27.5
-  eslint-plugin-unicorn: 45.0.2
+  eslint-plugin-unicorn: 46.0.0
   postcss-ekscss: ^0.0.6
   prettier: 2.8.4
   stylelint: 15.2.0
@@ -30,7 +30,7 @@ devDependencies:
   eslint-config-airbnb-base: 15.0.0_yckic57kx266ph64dhq6ozvb54
   eslint-config-airbnb-typescript: 17.0.0_gnnf2grdq7gywvy33vl2lfcipa
   eslint-plugin-import: 2.27.5_uyiasnnzcqrxqkfvjklwnmwcha
-  eslint-plugin-unicorn: 45.0.2_eslint@8.35.0
+  eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
   prettier: 2.8.4
   stylelint: 15.2.0
   stylelint-config-standard: 30.0.1_stylelint@15.2.0
@@ -1030,8 +1030,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-unicorn/45.0.2_eslint@8.35.0:
-    resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
+  /eslint-plugin-unicorn/46.0.0_eslint@8.35.0:
+    resolution: {integrity: sha512-j07WkC+PFZwk8J33LYp6JMoHa1lXc1u6R45pbSAipjpfpb7KIGr17VE2D685zCxR5VL4cjrl65kTJflziQWMDA==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.28.0'
