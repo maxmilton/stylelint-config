@@ -6,7 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "skipLibCheck": true,
     "allowJs": true,
     "checkJs": true,
@@ -16,12 +15,12 @@
     "allowUnreachableCode": false,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true
   },
   "include": ["**/*", "**/.*.cjs", "**/*.mjs"],
   "exclude": ["**/node_modules", "coverage"]
