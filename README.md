@@ -15,28 +15,15 @@ Property order defined as:
 1. Typography
 1. Remaining properties sorted alphabetically
 
-Based on of the best ideas from:
-
-- <https://github.com/ream88/stylelint-config-idiomatic-order>
-- <https://github.com/hudochenkov/stylelint-config-hudochenkov>
-- <https://github.com/constverum/stylelint-config-rational-order>
-- <https://github.com/stormwarning/stylelint-config-recess-order>
-
 ## Installation
 
-Add dependency to your project:
+1. Add dependencies to your project:
 
 ```sh
-npm install --save-dev @maxmilton/stylelint-config
+npm install --save-dev @maxmilton/stylelint-config stylelint-config-standard
 ```
 
-or
-
-```sh
-yarn add --save-dev @maxmilton/stylelint-config
-```
-
-Add to your stylelint configuration (adding `stylelint-config-standard` is also recommended):
+2. Add to your stylelint configuration:
 
 `pacakge.json`:
 
@@ -48,9 +35,18 @@ Add to your stylelint configuration (adding `stylelint-config-standard` is also 
 }
 ```
 
+## Prior Art
+
+This package is based on of the best ideas from:
+
+- <https://github.com/ream88/stylelint-config-idiomatic-order>
+- <https://github.com/hudochenkov/stylelint-config-hudochenkov>
+- <https://github.com/constverum/stylelint-config-rational-order>
+- <https://github.com/stormwarning/stylelint-config-recess-order>
+
 ## License
 
-MIT license. See [LICENSE](https://github.com/maxmilton/new-tab/blob/master/LICENSE).
+MIT license. See [LICENSE](https://github.com/maxmilton/stylelint-config/blob/master/LICENSE).
 
 ---
 

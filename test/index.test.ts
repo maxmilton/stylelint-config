@@ -1,6 +1,5 @@
+import { expect, test } from 'bun:test';
 import stylelint from 'stylelint';
-import { test } from 'uvu';
-import * as assert from 'uvu/assert';
 import sharedConfig from '../stylelint.config';
 
 const baseConfig = {
@@ -16,7 +15,7 @@ test('lints without crashing', async () => {
     code: 'body { color: red; }\n',
     config,
   });
-  assert.is(result.errored, false);
+  expect(result.errored).toBe(false);
 });
 
 test('reports error on "prettier-ignore" comment without shared config', async () => {
@@ -24,10 +23,10 @@ test('reports error on "prettier-ignore" comment without shared config', async (
     code: 'body {\n  margin: 0;\n  /* prettier-ignore */\n  color: red;\n}\n',
     config: baseConfig,
   });
-  assert.is(result.errored, true);
-  assert.is(result.results.length, 1);
-  assert.is(result.results[0].warnings.length, 1);
-  assert.is(result.results[0].warnings[0].rule, 'comment-empty-line-before');
+  expect(result.errored).toBe(true);
+  expect(result.results.length).toBe(1);
+  expect(result.results[0].warnings.length).toBe(1);
+  expect(result.results[0].warnings[0].rule).toBe('comment-empty-line-before');
 });
 
 test('does not error on "prettier-ignore" comment', async () => {
@@ -35,7 +34,7 @@ test('does not error on "prettier-ignore" comment', async () => {
     code: 'body {\n  margin: 0;\n  /* prettier-ignore */\n  color: red;\n}\n',
     config,
   });
-  assert.is(result.errored, false);
+  expect(result.errored).toBe(false);
 });
 
 test('reports error on "#apply" property without shared config', async () => {
@@ -43,10 +42,10 @@ test('reports error on "#apply" property without shared config', async () => {
     code: 'body {\n  #apply: .bold;\n}\n',
     config: baseConfig,
   });
-  assert.is(result.errored, true);
-  assert.is(result.results.length, 1);
-  assert.is(result.results[0].warnings.length, 1);
-  assert.is(result.results[0].warnings[0].rule, 'property-no-unknown');
+  expect(result.errored).toBe(true);
+  expect(result.results.length).toBe(1);
+  expect(result.results[0].warnings.length).toBe(1);
+  expect(result.results[0].warnings[0].rule).toBe('property-no-unknown');
 });
 
 test('does not error on "#apply" property', async () => {
@@ -54,7 +53,7 @@ test('does not error on "#apply" property', async () => {
     code: 'body {\n  #apply: .bold;\n}\n',
     config,
   });
-  assert.is(result.errored, false);
+  expect(result.errored).toBe(false);
 });
 
 test('crashes on XCSS expression without shared config', async () => {
@@ -62,10 +61,10 @@ test('crashes on XCSS expression without shared config', async () => {
     files: ['test/fixtures/basic.xcss'], // must use file so shared config uses matching override
     config: baseConfig,
   });
-  assert.is(result.errored, true);
-  assert.is(result.results.length, 1);
-  assert.is(result.results[0].warnings.length, 1);
-  assert.is(result.results[0].warnings[0].rule, 'CssSyntaxError');
+  expect(result.errored).toBe(true);
+  expect(result.results.length).toBe(1);
+  expect(result.results[0].warnings.length).toBe(1);
+  expect(result.results[0].warnings[0].rule).toBe('CssSyntaxError');
 });
 
 test('does not crash on XCSS expression', async () => {
@@ -73,7 +72,5 @@ test('does not crash on XCSS expression', async () => {
     files: ['test/fixtures/basic.xcss'],
     config,
   });
-  assert.is(result.errored, false);
+  expect(result.errored).toBe(false);
 });
-
-test.run();
