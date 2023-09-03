@@ -2,26 +2,24 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "checkJs": true,
-    "noEmit": true,
 
     "strict": true,
     "allowUnreachableCode": false,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": false, // covered by eslint
     "noImplicitOverride": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "useDefineForClassFields": true,
-    "verbatimModuleSyntax": true
+    "noUnusedLocals": false, // covered by eslint
+    "noUnusedParameters": false, // covered by eslint
+    "verbatimModuleSyntax": true,
+
+    "types": ["bun-types"]
   },
-  "include": ["**/*", "**/.*.cjs", "**/*.mjs"],
-  "exclude": ["**/node_modules", "coverage"]
+  "include": ["test"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
