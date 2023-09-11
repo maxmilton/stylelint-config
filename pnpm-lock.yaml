@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   postcss-ekscss:
-    specifier: ^0.0.7
-    version: 0.0.7(postcss@8.4.24)
+    specifier: ^0.0.9
+    version: 0.0.9(postcss@8.4.24)
   stylelint-order:
     specifier: ^6.0.0
     version: 6.0.0(stylelint@15.10.1)
@@ -2011,8 +2011,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss-ekscss@0.0.7(postcss@8.4.24):
-    resolution: {integrity: sha512-4rYH3Po0+AUvDMlBRgIMik7Wm81d3lfOgad8bwQD1R12NuXGwMr5/i9p9DoyXHUEmK1iLnZtKSh/EI5xX0zfAA==}
+  /postcss-ekscss@0.0.9(postcss@8.4.24):
+    resolution: {integrity: sha512-qYC2Py28QE0flqoXYZ+fENKvHS067/9u9EGUToyEw6yDS0E4rZcsWej9uVC9GXlSUAaFmg9/oBE5xLpiA8OPKQ==}
     peerDependencies:
       postcss: ^8.0.0
     peerDependenciesMeta:
