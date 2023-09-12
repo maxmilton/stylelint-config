@@ -10,7 +10,8 @@
     "lint": "bun run lint:js && bun run lint:ts",
     "lint:js": "eslint --ignore-path .gitignore --ext .cjs,.js,.mjs,.ts .",
     "lint:ts": "tsc --noEmit",
-    "test": "bun test"
+    "_test": "bun test",
+    "test": "node -r uvu ./test/node.test.mjs"
   },
   "peerDependencies": {
     "stylelint": "^15.0.0"
@@ -33,6 +34,7 @@
     "prettier": "3.0.3",
     "stylelint": "15.10.3",
     "stylelint-config-standard": "34.0.0",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "uvu": "0.5.6"
   }
 }

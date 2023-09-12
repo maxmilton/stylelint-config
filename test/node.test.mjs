@@ -1,9 +1,12 @@
-// FIXME: Bun crashes when trying to these tests. Once fixed, remove the
-// test/node.test.mjs file.
+// FIXME: This file is a workaround to bun test crashing when running
+// "test/index.test.ts". Once that's fixed, remove this file.
 
-import { expect, test } from 'bun:test';
+/* eslint-disable import/extensions */
+
 import stylelint from 'stylelint';
-import sharedConfig from '../stylelint.config';
+import { test } from 'uvu';
+import * as assert from 'uvu/assert';
+import sharedConfig from '../stylelint.config.js';
 
 const baseConfig = {
   extends: ['stylelint-config-standard'],
@@ -18,7 +21,7 @@ test('lints without crashing', async () => {
     code: 'body { color: red; }\n',
     config,
   });
-  expect(result.errored).toBe(false);
+  assert.is(result.errored, false);
 });
 
 test('reports error on "prettier-ignore" comment without shared config', async () => {
@@ -26,10 +29,10 @@ test('reports error on "prettier-ignore" comment without shared config', async (
     code: 'body {\n  margin: 0;\n  /* prettier-ignore */\n  color: red;\n}\n',
     config: baseConfig,
   });
-  expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
-  expect(result.results[0].warnings.length).toBe(1);
-  expect(result.results[0].warnings[0].rule).toBe('comment-empty-line-before');
+  assert.is(result.errored, true);
+  assert.is(result.results.length, 1);
+  assert.is(result.results[0].warnings.length, 1);
+  assert.is(result.results[0].warnings[0].rule, 'comment-empty-line-before');
 });
 
 test('does not error on "prettier-ignore" comment', async () => {
@@ -37,7 +40,7 @@ test('does not error on "prettier-ignore" comment', async () => {
     code: 'body {\n  margin: 0;\n  /* prettier-ignore */\n  color: red;\n}\n',
     config,
   });
-  expect(result.errored).toBe(false);
+  assert.is(result.errored, false);
 });
 
 test('reports error on "#apply" property without shared config', async () => {
@@ -45,10 +48,10 @@ test('reports error on "#apply" property without shared config', async () => {
     code: 'body {\n  #apply: .bold;\n}\n',
     config: baseConfig,
   });
-  expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
-  expect(result.results[0].warnings.length).toBe(1);
-  expect(result.results[0].warnings[0].rule).toBe('property-no-unknown');
+  assert.is(result.errored, true);
+  assert.is(result.results.length, 1);
+  assert.is(result.results[0].warnings.length, 1);
+  assert.is(result.results[0].warnings[0].rule, 'property-no-unknown');
 });
 
 test('does not error on "#apply" property', async () => {
@@ -56,7 +59,7 @@ test('does not error on "#apply" property', async () => {
     code: 'body {\n  #apply: .bold;\n}\n',
     config,
   });
-  expect(result.errored).toBe(false);
+  assert.is(result.errored, false);
 });
 
 test('crashes on XCSS expression without shared config', async () => {
@@ -64,10 +67,10 @@ test('crashes on XCSS expression without shared config', async () => {
     files: ['test/fixtures/basic.xcss'], // must use file so shared config uses matching override
     config: baseConfig,
   });
-  expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
-  expect(result.results[0].warnings.length).toBe(1);
-  expect(result.results[0].warnings[0].rule).toBe('CssSyntaxError');
+  assert.is(result.errored, true);
+  assert.is(result.results.length, 1);
+  assert.is(result.results[0].warnings.length, 1);
+  assert.is(result.results[0].warnings[0].rule, 'CssSyntaxError');
 });
 
 test('does not crash on XCSS expression', async () => {
@@ -75,5 +78,7 @@ test('does not crash on XCSS expression', async () => {
     files: ['test/fixtures/basic.xcss'],
     config,
   });
-  expect(result.errored).toBe(false);
+  assert.is(result.errored, false);
 });
+
+test.run();
