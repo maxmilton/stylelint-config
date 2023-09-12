@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      # FIXME: Remove node from CI once bun tests are fixed.
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
@@ -20,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
