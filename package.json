@@ -13,7 +13,7 @@
     "test": "bun test --coverage"
   },
   "peerDependencies": {
-    "stylelint": "^15.0.0"
+    "stylelint": "^16.0.0"
   },
   "dependencies": {
     "postcss-ekscss": "^0.0.9",
