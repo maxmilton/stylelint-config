@@ -1,6 +1,3 @@
-// FIXME: Bun crashes when trying to these tests. Once fixed, remove the
-// test/node.test.mjs file.
-
 import { expect, test } from 'bun:test';
 import stylelint from 'stylelint';
 import sharedConfig from '../stylelint.config';
@@ -13,12 +10,21 @@ const config = {
   ...sharedConfig,
 };
 
-test('lints without crashing', async () => {
+test('lints without crashing and no error', async () => {
   const result = await stylelint.lint({
     code: 'body { color: red; }\n',
     config,
   });
   expect(result.errored).toBe(false);
+});
+
+test('reports no warnings', async () => {
+  const result = await stylelint.lint({
+    code: 'body { color: red; }\n',
+    config,
+  });
+  expect(result.results).toBeArrayOfSize(1);
+  expect(result.results[0].warnings).toStrictEqual([]);
 });
 
 test('reports error on "prettier-ignore" comment without shared config', async () => {
@@ -27,7 +33,7 @@ test('reports error on "prettier-ignore" comment without shared config', async (
     config: baseConfig,
   });
   expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
+  expect(result.results).toBeArrayOfSize(1);
   expect(result.results[0].warnings.length).toBe(1);
   expect(result.results[0].warnings[0].rule).toBe('comment-empty-line-before');
 });
@@ -46,7 +52,7 @@ test('reports error on "#apply" property without shared config', async () => {
     config: baseConfig,
   });
   expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
+  expect(result.results).toBeArrayOfSize(1);
   expect(result.results[0].warnings.length).toBe(1);
   expect(result.results[0].warnings[0].rule).toBe('property-no-unknown');
 });
@@ -59,18 +65,18 @@ test('does not error on "#apply" property', async () => {
   expect(result.errored).toBe(false);
 });
 
-test('crashes on XCSS expression without shared config', async () => {
+test('has syntax error on XCSS expression without shared config', async () => {
   const result = await stylelint.lint({
     files: ['test/fixtures/basic.xcss'], // must use file so shared config uses matching override
     config: baseConfig,
   });
   expect(result.errored).toBe(true);
-  expect(result.results.length).toBe(1);
+  expect(result.results).toBeArrayOfSize(1);
   expect(result.results[0].warnings.length).toBe(1);
   expect(result.results[0].warnings[0].rule).toBe('CssSyntaxError');
 });
 
-test('does not crash on XCSS expression', async () => {
+test('does not have syntax error on XCSS expression', async () => {
   const result = await stylelint.lint({
     files: ['test/fixtures/basic.xcss'],
     config,
