@@ -186,7 +186,6 @@ module.exports = {
       'always',
       { ignoreComments: ['prettier-ignore'] },
     ],
-    'function-whitespace-after': null, // TODO: Remove when postcss-ekscss tokenizer is fixed
     'order/order': [
       [
         'dollar-variables',
@@ -207,7 +206,6 @@ module.exports = {
       },
     ],
     'property-no-unknown': [true, { ignoreProperties: ['#apply'] }],
-    'string-quotes': 'single',
   },
   overrides: [
     {
