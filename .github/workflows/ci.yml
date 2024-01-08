@@ -3,8 +3,8 @@ on:
   push:
     branches: [master]
     paths-ignore: ['**.md']
-  pull_request:
-    branches: [master]
+  pull_request: {}
+  workflow_dispatch: {}
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -16,6 +16,16 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run test
+      # FIXME: Enable coverage reporting once bun test supports it; https://github.com/oven-sh/bun/issues/2311
+      # - name: Report coverage
+      #   if: ${{ github.repository_owner == 'maxmilton' }}
+      #   run: |
+      #     curl -Lo ./cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+      #     chmod +x ./cc-test-reporter
+      #     ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.json coverage/lcov.info
+      #     ./cc-test-reporter upload-coverage
+      #   env:
+      #     CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: 5
