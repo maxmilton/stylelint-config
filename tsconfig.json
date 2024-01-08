@@ -6,7 +6,7 @@
     "esModuleInterop": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "allowJs": true,
+    "allowJs": false,
 
     "strict": true,
     "allowUnreachableCode": false,
@@ -16,9 +16,12 @@
     "noImplicitOverride": true,
     "noUnusedLocals": false, // covered by eslint
     "noUnusedParameters": false, // covered by eslint
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": true
 
-    "types": ["bun-types"]
+    // TODO: Remove once @types/bun pulls in bun-types v1.0.19+ (but it
+    // currently depends on in v1.0.18); when @types/bun releases new version.
+    //  ↳ Also remember to remove bun-types from package.json#overrides too!
+    // "types": ["bun-types"]
   },
   "include": ["test"],
   "references": [{ "path": "./tsconfig.node.json" }]
