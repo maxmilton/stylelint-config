@@ -25,13 +25,11 @@ npm install --save-dev @maxmilton/stylelint-config stylelint-config-standard
 
 2. Add to your stylelint configuration:
 
-`pacakge.json`:
+`.stylelintrc`:
 
 ```json
 {
-  "stylelint": {
-    "extends": ["stylelint-config-standard", "@maxmilton/stylelint-config"]
-  }
+  "extends": ["stylelint-config-standard", "@maxmilton/stylelint-config"]
 }
 ```
 
@@ -50,4 +48,4 @@ MIT license. See [LICENSE](https://github.com/maxmilton/stylelint-config/blob/ma
 
 ---
 
-© 2023 [Max Milton](https://maxmilton.com)
+© 2024 [Max Milton](https://maxmilton.com)
