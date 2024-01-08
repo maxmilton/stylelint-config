@@ -23,6 +23,6 @@
     //  ↳ Also remember to remove bun-types from package.json#overrides too!
     // "types": ["bun-types"]
   },
-  "include": ["test"],
+  "include": ["test", "*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
