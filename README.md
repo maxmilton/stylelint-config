@@ -1,4 +1,5 @@
 [![Build status](https://img.shields.io/github/actions/workflow/status/maxmilton/stylelint-config/ci.yml?branch=master)](https://github.com/maxmilton/stylelint-config/actions)
+[![Coverage status](https://img.shields.io/codeclimate/coverage/maxmilton/stylelint-config)](https://codeclimate.com/github/maxmilton/stylelint-config)
 [![NPM version](https://img.shields.io/npm/v/@maxmilton/stylelint-config.svg)](https://www.npmjs.com/package/@maxmilton/stylelint-config)
 [![Licence](https://img.shields.io/github/license/maxmilton/stylelint-config.svg)](https://github.com/maxmilton/stylelint-config/blob/master/LICENSE)
 
