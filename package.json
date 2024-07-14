@@ -5,7 +5,9 @@
   "repository": "maxmilton/stylelint-config",
   "author": "Max Milton <max@happyhackers.xyz>",
   "license": "MIT",
-  "main": "stylelint.config.js",
+  "type": "module",
+  "main": "stylelint.config.mjs",
+  "types": "stylelint.config.d.ts",
   "scripts": {
     "lint": "bun run lint:fmt && bun run lint:js && bun run lint:ts",
     "lint:fmt": "biome format .",

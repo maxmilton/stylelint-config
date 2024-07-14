@@ -1,5 +1,3 @@
-// @ts-check
-
 const propertyOrder = [
   'all',
   '#apply',
@@ -179,7 +177,7 @@ const propertyOrder = [
 ];
 
 /** @type {import('stylelint').Config} */
-module.exports = {
+export const config = {
   plugins: ['stylelint-order'],
   rules: {
     'comment-empty-line-before': [
@@ -214,3 +212,5 @@ module.exports = {
     },
   ],
 };
+
+export default config;
