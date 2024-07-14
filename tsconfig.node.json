@@ -6,8 +6,7 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    ".eslintrc.cjs",
-    "package.json", // may be imported
-    "stylelint.config.js"
+    "**/*.cjs",
+    "package.json" // imported in manifest.config.ts
   ]
 }
