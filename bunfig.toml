@@ -1,0 +1,6 @@
+[run]
+bun = true
+
+[test]
+root = "./test"
+coverage = true

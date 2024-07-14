@@ -9,11 +9,11 @@
   "main": "stylelint.config.mjs",
   "types": "stylelint.config.d.ts",
   "scripts": {
-    "lint": "bun run lint:fmt && bun run lint:js && bun run lint:ts",
-    "lint:fmt": "biome format .",
-    "lint:js": "eslint --ignore-path .gitignore --ext .ts,.mjs,.js,.cjs .",
+    "lint": "bun lint:fmt && bun lint:js && bun lint:ts",
+    "lint:fmt": "biome check",
+    "lint:js": "eslint",
     "lint:ts": "tsc --noEmit",
-    "test": "bun test --coverage"
+    "test": "bun test"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
