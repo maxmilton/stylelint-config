@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
 import stylelint from 'stylelint';
-import sharedConfig from '../stylelint.config';
+import { config as sharedConfig } from '../stylelint.config';
 
 const baseConfig = {
   extends: ['stylelint-config-standard'],
