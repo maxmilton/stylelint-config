@@ -19,7 +19,7 @@
     "stylelint": "^16.0.0"
   },
   "dependencies": {
-    "postcss-ekscss": "^0.0.9",
+    "postcss-ekscss": "^0.0.10",
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
