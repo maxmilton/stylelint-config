@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "Stylelint configuration with support for XCSS via ekscss",
   "repository": "maxmilton/stylelint-config",
+  "homepage": "https://github.com/maxmilton/stylelint-config",
   "author": "Max Milton <max@happyhackers.xyz>",
   "license": "MIT",
   "type": "module",
