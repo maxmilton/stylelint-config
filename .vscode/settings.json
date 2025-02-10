@@ -5,6 +5,7 @@
   "eslint.format.enable": false,
   "eslint.useFlatConfig": true,
   "git.branchProtection": ["master"],
+
   "js/ts.implicitProjectConfig.checkJs": true,
   "prettier.enable": false, // use biome instead
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -14,7 +15,10 @@
   "css.validate": false,
   "scss.validate": false,
   "stylelint.validate": ["css", "scss"],
-  "files.associations": { "*.xcss": "scss" },
+  "files.associations": {
+    "*.xcss": "scss",
+    "package.json": "jsonc"
+  },
 
   "[css][html][json][jsonc][markdown][scss][xml]": {
     "editor.codeActionsOnSave": {
