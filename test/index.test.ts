@@ -53,8 +53,9 @@ test('reports error on "#apply" property without shared config', async () => {
   });
   expect(result.errored).toBe(true);
   expect(result.results).toBeArrayOfSize(1);
-  expect(result.results[0].warnings.length).toBe(1);
-  expect(result.results[0].warnings[0].rule).toBe('property-no-unknown');
+  expect(result.results[0].warnings.length).toBe(2);
+  expect(result.results[0].warnings[0].rule).toBe('declaration-property-value-no-unknown');
+  expect(result.results[0].warnings[1].rule).toBe('property-no-unknown');
 });
 
 test('does not error on "#apply" property', async () => {

@@ -184,6 +184,10 @@ export const config = {
       'always',
       { ignoreComments: ['prettier-ignore'] },
     ],
+    'declaration-property-value-no-unknown': [
+      true,
+      { ignoreProperties: { '#apply': '/.+/' } },
+    ],
     'order/order': [
       [
         'dollar-variables',
