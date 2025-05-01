@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "postcss-ekscss": "^0.0.12",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^7.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
