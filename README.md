@@ -49,4 +49,4 @@ MIT license. See [LICENSE](https://github.com/maxmilton/stylelint-config/blob/ma
 
 ---
 
-© 2024 [Max Milton](https://maxmilton.com)
+© 2025 [Max Milton](https://maxmilton.com)
