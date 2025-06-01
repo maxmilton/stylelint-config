@@ -29,7 +29,7 @@
     "@maxmilton/eslint-config": "0.1.0",
     "@types/bun": "1.2.11",
     "eslint": "9.26.0",
-    "eslint-plugin-unicorn": "59.0.0",
+    "eslint-plugin-unicorn": "59.0.1",
     "stylelint": "16.19.1",
     "stylelint-config-standard": "38.0.0",
     "typescript": "5.8.3",
