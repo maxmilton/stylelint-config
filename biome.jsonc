@@ -18,6 +18,9 @@
     },
     "rules": {
       "recommended": true,
+      "correctness": {
+        "noUnknownFunction": "off" // TODO: Broken with tailwindcss theme() function
+      },
       "style": {
         "noNonNullAssertion": "off"
       },
