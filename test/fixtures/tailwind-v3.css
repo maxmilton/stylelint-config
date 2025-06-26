@@ -1,0 +1,179 @@
+/* Tailwind v3 Test Fixture */
+/* This file contains Tailwind v3 specific syntax and features */
+
+/* Theme configuration using @tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  h1 {
+    @apply text-4xl font-bold text-gray-900;
+  }
+
+  h2 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  /* Dark mode using .dark class */
+  .dark {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+/* Component classes */
+@layer components {
+  .btn {
+    @apply px-4 py-2 font-medium rounded-md transition-colors duration-200;
+
+    &-primary {
+      @apply bg-blue-600 text-white hover:bg-blue-700;
+    }
+
+    &-secondary {
+      @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+    }
+
+    &-lg {
+      @apply px-6 py-3 text-lg;
+    }
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+
+    &-header {
+      @apply px-6 py-4 border-b border-gray-200;
+    }
+
+    &-body {
+      @apply p-6;
+    }
+
+    &-footer {
+      @apply px-6 py-4 bg-gray-50 border-t border-gray-200;
+    }
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  /* Custom scrollbar */
+  .scrollbar-thin {
+    scrollbar-color: #9ca3af #e5e7eb;
+    scrollbar-width: thin;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+
+  /* Aspect ratio container */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Backdrop blur */
+  .backdrop-blur-10 {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Custom keyframes */
+@keyframes ping {
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Custom forms plugin (common in v3) */
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    @apply text-blue-600 border-gray-300 rounded focus:ring-blue-500;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    @apply bg-white text-black text-base;
+  }
+}
+
+/* Container queries (experimental in v3) */
+@container (min-width: 640px) {
+  .card {
+    @apply flex;
+  }
+}
+
+/* Custom property fallbacks */
+:root {
+  --color-primary: #3b82f6;
+  --color-secondary: #6b7280;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+}
+
+/* Using theme() function */
+.themed-element {
+  border-color: theme("colors.gray.300");
+  color: theme("colors.blue.600");
+  background-color: theme("colors.gray.100");
+}
+
+/* Custom scrollbar for WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #9ca3af;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
