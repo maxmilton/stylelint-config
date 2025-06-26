@@ -182,7 +182,11 @@ export const config = {
   rules: {
     'comment-empty-line-before': [
       'always',
-      { ignoreComments: ['prettier-ignore'] },
+      {
+        except: ['first-nested'],
+        ignore: ['after-comment', 'stylelint-commands'],
+        ignoreComments: ['/^biome-ignore/', 'prettier-ignore'],
+      },
     ],
     'order/order': [
       [
