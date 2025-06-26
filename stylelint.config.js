@@ -184,10 +184,6 @@ export const config = {
       'always',
       { ignoreComments: ['prettier-ignore'] },
     ],
-    'declaration-property-value-no-unknown': [
-      true,
-      { ignoreProperties: { '#apply': '/.+/' } },
-    ],
     'order/order': [
       [
         'dollar-variables',
@@ -207,14 +203,7 @@ export const config = {
         severity: 'warning',
       },
     ],
-    'property-no-unknown': [true, { ignoreProperties: ['#apply'] }],
   },
-  overrides: [
-    {
-      files: ['**/*.xcss'],
-      customSyntax: 'postcss-ekscss',
-    },
-  ],
 };
 
 export default config;
