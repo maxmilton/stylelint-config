@@ -37,6 +37,19 @@ npm install --save-dev @maxmilton/stylelint-config stylelint-config-standard
 }
 ```
 
+... or for custom syntax support:
+
+```json
+{
+  "extends": [
+    "stylelint-config-standard",
+    "@maxmilton/stylelint-config",
+    "@maxmilton/stylelint-config/tailwind",
+    "@maxmilton/stylelint-config/xcss"
+  ]
+}
+```
+
 ## Prior Art
 
 This package is based on of the best ideas from:

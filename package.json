@@ -9,6 +9,20 @@
   "type": "module",
   "main": "stylelint.config.js",
   "types": "stylelint.config.d.ts",
+  "exports": {
+    ".": {
+      "types": "./stylelint.config.d.ts",
+      "default": "./stylelint.config.js"
+    },
+    "./tailwind": {
+      "types": "./stylelint.config.d.ts",
+      "default": "./stylelint-tailwind.config.js"
+    },
+    "./xcss": {
+      "types": "./stylelint.config.d.ts",
+      "default": "./stylelint-xcss.config.js"
+    }
+  },
   "scripts": {
     "lint": "bun lint:fmt && bun lint:js && bun lint:ts",
     "lint:fmt": "biome check",
