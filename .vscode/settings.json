@@ -13,7 +13,8 @@
   "js/ts.implicitProjectConfig.checkJs": true,
   "prettier.enable": false, // use biome instead
   "scss.validate": false,
-  "stylelint.validate": ["css", "scss"],
+  "stylelint.validate": ["css", "scss", "tailwindcss"],
+  "tailwindCSS.validate": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "yaml.validate": true,
