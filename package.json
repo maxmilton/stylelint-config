@@ -7,22 +7,25 @@
   "author": "Max Milton <max@happyhackers.xyz>",
   "license": "MIT",
   "type": "module",
-  "main": "stylelint.config.js",
-  "types": "stylelint.config.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./stylelint.config.d.ts",
-      "default": "./stylelint.config.js"
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
     },
-    "./tailwind": {
-      "types": "./stylelint.config.d.ts",
-      "default": "./stylelint-tailwind.config.js"
+    "./tailwindcss": {
+      "types": "./src/index.d.ts",
+      "default": "./src/tailwindcss.js"
     },
     "./xcss": {
-      "types": "./stylelint.config.d.ts",
-      "default": "./stylelint-xcss.config.js"
+      "types": "./src/index.d.ts",
+      "default": "./src/xcss.js"
     }
   },
+  "files": [
+    "src"
+  ],
   "scripts": {
     "lint": "bun lint:fmt && bun lint:js && bun lint:ts",
     "lint:fmt": "biome check",
