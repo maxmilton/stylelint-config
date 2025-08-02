@@ -1,16 +1,9 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-  "assist": {
-    "actions": {
-      "recommended": true,
-      "source": { "useSortedProperties": "on" }
-    }
-  },
   "formatter": {
-    "useEditorconfig": false,
-    "formatWithErrors": true,
-    "indentStyle": "space"
+    "indentStyle": "space",
+    "lineWidth": 100
   },
   "linter": {
     "domains": {
@@ -33,17 +26,11 @@
     }
   },
   "javascript": {
-    "globals": ["Bun"],
-    "formatter": {
-      "quoteStyle": "single"
-    }
+    "globals": ["Bun"]
   },
   "overrides": [
     {
       "includes": ["**/*.spec.ts", "**/*.test.ts", "test/**"],
-      "formatter": {
-        "lineWidth": 100
-      },
       "linter": {
         "domains": {
           "test": "all"
