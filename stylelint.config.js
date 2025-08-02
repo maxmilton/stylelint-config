@@ -3,9 +3,9 @@ export default {
   reportInvalidScopeDisables: true,
   reportNeedlessDisables: true,
   extends: [
-    'stylelint-config-standard',
-    '@maxmilton/stylelint-config',
-    '@maxmilton/stylelint-config/tailwindcss',
-    '@maxmilton/stylelint-config/xcss',
+    "stylelint-config-standard",
+    "@maxmilton/stylelint-config",
+    "@maxmilton/stylelint-config/tailwindcss",
+    "@maxmilton/stylelint-config/xcss",
   ],
 };

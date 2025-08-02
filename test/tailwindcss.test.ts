@@ -1,47 +1,47 @@
-import { describe, expect, test } from 'bun:test';
-import stylelint from 'stylelint';
-import config from '../src/tailwindcss.js';
+import { describe, expect, test } from "bun:test";
+import stylelint from "stylelint";
+import config from "../src/tailwindcss.js";
 
-test('lints without crashing and no error', async () => {
+test("lints without crashing and no error", async () => {
   expect.assertions(1);
   const result = await stylelint.lint({
-    code: 'body { color: red; }\n',
+    code: "body { color: red; }\n",
     config,
   });
   expect(result.errored).toBeFalse();
 });
 
-test('reports no warnings', async () => {
+test("reports no warnings", async () => {
   expect.assertions(2);
   const result = await stylelint.lint({
-    code: 'body { color: red; }\n',
+    code: "body { color: red; }\n",
     config,
   });
   expect(result.results).toBeArrayOfSize(1);
   expect(result.results[0].warnings).toStrictEqual([]);
 });
 
-describe('fixture: tailwind-v4', () => {
-  test('has warnings without shared config', async () => {
+describe("fixture: tailwind-v4", () => {
+  test("has warnings without shared config", async () => {
     expect.assertions(3);
     const result = await stylelint.lint({
-      files: ['test/fixtures/tailwind-v4.css'],
-      config: { extends: ['stylelint-config-standard'] },
+      files: ["test/fixtures/tailwind-v4.css"],
+      config: { extends: ["stylelint-config-standard"] },
     });
     expect(result.results).toBeArrayOfSize(1);
     expect(result.results[0].warnings).toBeArrayOfSize(26);
     expect(result.errored).toBeTrue();
   });
 
-  test('does not have warnings with shared config', async () => {
+  test("does not have warnings with shared config", async () => {
     expect.assertions(3);
     const result = await stylelint.lint({
-      files: ['test/fixtures/tailwind-v4.css'],
+      files: ["test/fixtures/tailwind-v4.css"],
       config: {
         extends: [
-          'stylelint-config-standard',
-          '@maxmilton/stylelint-config',
-          '@maxmilton/stylelint-config/tailwindcss',
+          "stylelint-config-standard",
+          "@maxmilton/stylelint-config",
+          "@maxmilton/stylelint-config/tailwindcss",
         ],
       },
     });
@@ -51,27 +51,27 @@ describe('fixture: tailwind-v4', () => {
   });
 });
 
-describe('fixture: tailwind-v3', () => {
-  test('has warnings without shared config', async () => {
+describe("fixture: tailwind-v3", () => {
+  test("has warnings without shared config", async () => {
     expect.assertions(3);
     const result = await stylelint.lint({
-      files: ['test/fixtures/tailwind-v3.css'],
-      config: { extends: ['stylelint-config-standard'] },
+      files: ["test/fixtures/tailwind-v3.css"],
+      config: { extends: ["stylelint-config-standard"] },
     });
     expect(result.results).toBeArrayOfSize(1);
     expect(result.results[0].warnings).toBeArrayOfSize(24);
     expect(result.errored).toBeTrue();
   });
 
-  test('does not have warnings with shared config', async () => {
+  test("does not have warnings with shared config", async () => {
     expect.assertions(3);
     const result = await stylelint.lint({
-      files: ['test/fixtures/tailwind-v3.css'],
+      files: ["test/fixtures/tailwind-v3.css"],
       config: {
         extends: [
-          'stylelint-config-standard',
-          '@maxmilton/stylelint-config',
-          '@maxmilton/stylelint-config/tailwindcss',
+          "stylelint-config-standard",
+          "@maxmilton/stylelint-config",
+          "@maxmilton/stylelint-config/tailwindcss",
         ],
       },
     });
