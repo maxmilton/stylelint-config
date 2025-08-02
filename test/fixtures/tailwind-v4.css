@@ -34,6 +34,7 @@
 
 /* Test @custom-variant directive */
 @custom-variant group-hover {
+  /* stylelint-disable-next-line nesting-selector-no-missing-scoping-root */
   .group:hover & {
     @apply bg-opacity-90;
   }
