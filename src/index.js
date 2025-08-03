@@ -185,7 +185,7 @@ export default {
       {
         except: ["first-nested"],
         ignore: ["after-comment", "stylelint-commands"],
-        ignoreComments: ["/^biome-ignore/", "prettier-ignore"],
+        ignoreComments: ["/^biome-ignore/", "malva-ignore", "prettier-ignore"],
       },
     ],
     "order/order": [
