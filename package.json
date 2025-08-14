@@ -4,7 +4,7 @@
   "description": "Stylelint configuration with support for XCSS via ekscss",
   "repository": "github:maxmilton/stylelint-config",
   "homepage": "https://github.com/maxmilton/stylelint-config",
-  "author": "Max Milton <max@bunnybunny.org>",
+  "author": "Max Milton <max@2okki.com>",
   "license": "MIT",
   "type": "module",
   "main": "src/index.js",
