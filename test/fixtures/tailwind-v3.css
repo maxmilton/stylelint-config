@@ -1,6 +1,10 @@
 /* Tailwind v3 Test Fixture */
 /* This file contains Tailwind v3 specific syntax and features */
 
+/* biome-ignore-all lint/correctness/noUnknownFunction: biome lacks tailwind v3 support */
+/* biome-ignore-all lint/suspicious/noUnknownAtRules: biome lacks tailwind v3 support */
+/* biome-ignore-all lint/complexity/noImportantStyles: test fixture */
+
 /* Theme configuration using @tailwind */
 @tailwind base;
 @tailwind components;

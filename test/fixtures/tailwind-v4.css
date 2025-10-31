@@ -1,3 +1,5 @@
+/* biome-ignore-all lint/complexity/noImportantStyles: test fixture */
+
 @import "tailwindcss";
 
 /* Test @theme directive */
@@ -12,19 +14,21 @@
 }
 
 /* Custom utilities using @utility */
-@utility {
-  .rotate-45 {
-    transform: rotate(45deg);
-  }
+@utility rotate-45 {
+  transform: rotate(45deg);
+}
 
-  .shadow-outline {
-    box-shadow: 0 0 0 3px var(--color-primary, rgb(59 130 246 / 50%));
-  }
+@utility shadow-outline {
+  box-shadow: 0 0 0 3px var(--color-primary, rgb(59 130 246 / 50%));
 }
 
 /* Test @variant directive */
-@variant hover, focus {
-  .btn {
+.btn {
+  @variant hover {
+    @apply bg-blue-600 text-white;
+  }
+
+  @variant focus {
     @apply bg-blue-600 text-white;
   }
 }
@@ -41,7 +45,7 @@
 }
 
 /* @source directive for including other CSS files */
-@source 'components/buttons.css';
+@source "components/buttons.css";
 
 /* Base styles using @layer */
 @layer base {
