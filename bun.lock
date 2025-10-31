@@ -4,7 +4,7 @@
     "": {
       "name": "@maxmilton/stylelint-config",
       "dependencies": {
-        "postcss-ekscss": "^0.0.13",
+        "postcss-ekscss": "^0.0.15",
         "stylelint-order": "^7.0.0",
       },
       "devDependencies": {
@@ -375,7 +375,7 @@
 
     "postcss": ["postcss@8.5.6", "", { "dependencies": { "nanoid": "^3.3.11", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg=="],
 
-    "postcss-ekscss": ["postcss-ekscss@0.0.13", "", { "peerDependencies": { "postcss": "^8.0.0" }, "optionalPeers": ["postcss"] }, "sha512-A6Ny7GH+pyBLjidrgyt4ZWrcmv5uYOusUmJT+z40t0Zb0fcW8xoHxxG+XacQqtVf4iYCmuqAk48FYLZv0XxjYA=="],
+    "postcss-ekscss": ["postcss-ekscss@0.0.15", "", { "peerDependencies": { "postcss": "^8.0.0" }, "optionalPeers": ["postcss"] }, "sha512-jNjVElQTM3pRm+7HAbIY1shr+03C1fAnl9gBKCkTIYpG8oZlFlkqZJyuQpWucR9uU7Dz1+lfgFh4iQIqk6bjAQ=="],
 
     "postcss-resolve-nested-selector": ["postcss-resolve-nested-selector@0.1.6", "", {}, "sha512-0sglIs9Wmkzbr8lQwEyIzlDOOC9bGmfVKcJTaxv3vMmd3uo4o4DerC3En0bnmgceeql9BfC8hRkp7cg0fjdVqw=="],
 
