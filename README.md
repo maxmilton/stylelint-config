@@ -61,8 +61,8 @@ This package is based on of the best ideas from:
 
 ## License
 
-MIT license. See [LICENSE](https://github.com/maxmilton/stylelint-config/blob/master/LICENSE).
+MIT license. See [LICENSE](./LICENSE).
 
 ---
 
-© 2025 [Max Milton](https://maxmilton.com)
+© [Max Milton](https://maxmilton.com)
