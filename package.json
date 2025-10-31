@@ -49,7 +49,7 @@
     "eslint-plugin-unicorn": "60.0.0",
     "stylelint": "16.23.1",
     "stylelint-config-standard": "39.0.0",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "typescript-eslint": "8.39.1"
   }
 }
