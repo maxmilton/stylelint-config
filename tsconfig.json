@@ -5,12 +5,12 @@
     "module": "esnext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
-    "esModuleInterop": false,
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "skipLibCheck": true,
     "allowJs": true, // type=module
     "checkJs": true,
+    "maxNodeModuleJsDepth": 2,
     "noEmit": true,
 
     "strict": true,
@@ -22,7 +22,9 @@
     "noUncheckedSideEffectImports": true,
     "noUnusedLocals": false, // covered by eslint
     "noUnusedParameters": false, // covered by eslint
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+
+    "types": ["bun"]
   },
   "include": ["*.config.js", "src", "test"]
 }
