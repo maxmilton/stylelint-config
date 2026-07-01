@@ -39,9 +39,6 @@
         "domains": {
           "test": "all"
         }
-      },
-      "javascript": {
-        "globals": ["$console", "Bun", "happyDOM", "Loader"]
       }
     }
   ]
