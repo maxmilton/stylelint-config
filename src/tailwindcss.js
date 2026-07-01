@@ -1,4 +1,4 @@
-/** @type {import('stylelint').Config} */
+/** @type {import("stylelint").Config} */
 export default {
   rules: {
     "at-rule-no-deprecated": [true, { ignoreAtRules: ["apply"] }],
@@ -22,8 +22,8 @@ export default {
           "layer",
           "config",
           /** tailwindcss v1, v2 */
-          // 'variants',
-          // 'responsive',
+          // "variants",
+          // "responsive",
           "screen",
         ],
       },
