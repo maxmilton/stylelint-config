@@ -31,7 +31,8 @@
     "lint:fmt": "biome check",
     "lint:js": "eslint",
     "lint:ts": "tsc --noEmit",
-    "test": "bun test"
+    "test": "bun test --only-failures",
+    "test:ci": "bun test --coverage --randomize --rerun-each=3"
   },
   "peerDependencies": {
     "stylelint": "^17.0.0"
