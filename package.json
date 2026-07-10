@@ -2,13 +2,11 @@
   "name": "@maxmilton/stylelint-config",
   "version": "0.4.3",
   "description": "Stylelint configuration with support for XCSS via ekscss",
-  "repository": "github:maxmilton/stylelint-config",
   "homepage": "https://github.com/maxmilton/stylelint-config",
-  "author": "Max Milton <max@2okki.com>",
+  "repository": "github:maxmilton/stylelint-config",
   "license": "MIT",
+  "author": "Max Milton <max@2okki.com>",
   "type": "module",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
@@ -23,6 +21,8 @@
       "default": "./src/xcss.js"
     }
   },
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
     "src"
   ],
@@ -33,9 +33,6 @@
     "lint:ts": "tsc --noEmit",
     "test": "bun test --only-failures",
     "test:ci": "bun test --coverage --randomize --rerun-each=3"
-  },
-  "peerDependencies": {
-    "stylelint": "^17.0.0"
   },
   "dependencies": {
     "postcss-ekscss": "^0.0.15",
@@ -52,5 +49,8 @@
     "stylelint-config-standard": "40.0.0",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^17.0.0"
   }
 }
