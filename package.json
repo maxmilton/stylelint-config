@@ -48,7 +48,7 @@
     "stylelint": "17.14.1",
     "stylelint-config-standard": "40.0.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.62.1"
+    "typescript-eslint": "8.65.0"
   },
   "peerDependencies": {
     "stylelint": "^17.0.0"
