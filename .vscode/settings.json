@@ -3,7 +3,8 @@
   "css.validate": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
+    "source.fixAllDangerous": "never"
   },
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -15,13 +16,13 @@
     "*.xcss": "scss"
   },
   "git.branchProtection": ["master"],
+  "git.detectWorktrees": true,
+  "git.worktreeIncludeFiles": ["node_modules/**"],
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-  "prettier.enable": false, // use biome
   "scss.validate": false,
   "stylelint.validate": ["css", "scss", "tailwindcss"],
   "tailwindCSS.validate": true,
-  "yaml.validate": true,
 
   "[css]": {
     "editor.defaultFormatter": "biomejs.biome"
@@ -56,6 +57,9 @@
     "files.trimTrailingWhitespace": false
   },
   "[tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[toml]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
