@@ -1,6 +1,6 @@
 {
   "name": "@maxmilton/stylelint-config",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Stylelint configuration with support for XCSS via ekscss",
   "homepage": "https://github.com/maxmilton/stylelint-config",
   "repository": "github:maxmilton/stylelint-config",
