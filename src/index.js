@@ -185,7 +185,13 @@ export default {
       {
         except: ["first-nested"],
         ignore: ["after-comment", "stylelint-commands"],
-        ignoreComments: ["/^@import /", "/^biome-ignore/", "malva-ignore", "prettier-ignore"],
+        ignoreComments: [
+          "/^@import /",
+          "/^biome-ignore/",
+          "malva-ignore",
+          "oxfmt-ignore",
+          "prettier-ignore",
+        ],
       },
     ],
     "order/order": [
