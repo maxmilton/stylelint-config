@@ -21,5 +21,8 @@ export default defineConfig(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    rules: {
+      "unicorn/single-line-block-comment-style": "off",
+    },
   },
 );
