@@ -39,16 +39,16 @@
     "stylelint-order": "^8.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.10",
+    "@biomejs/biome": "2.5.14",
     "@eslint/js": "10.0.1",
     "@maxmilton/eslint-config": "0.3.5",
-    "@types/bun": "1.4.0",
-    "eslint": "10.9.1",
-    "eslint-plugin-unicorn": "73.0.0",
-    "stylelint": "17.14.1",
+    "@types/bun": "1.4.2",
+    "eslint": "10.11.0",
+    "eslint-plugin-unicorn": "76.0.0",
+    "stylelint": "17.15.0",
     "stylelint-config-standard": "40.0.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.68.0"
+    "typescript-eslint": "8.70.0"
   },
   "peerDependencies": {
     "stylelint": "^17.0.0"
