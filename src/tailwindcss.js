@@ -28,6 +28,7 @@ export default {
         ],
       },
     ],
+    "at-rule-prelude-no-invalid": [true, { ignoreAtRules: ["apply"] }],
     "declaration-property-value-no-unknown": [
       true,
       { ignoreProperties: { "/.+/": ["/theme(.+)/"] } },
