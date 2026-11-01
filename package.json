@@ -39,7 +39,7 @@
     "stylelint-order": "^8.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14",
+    "@biomejs/biome": "2.6.3",
     "@eslint/js": "10.0.1",
     "@maxmilton/eslint-config": "0.3.5",
     "@types/bun": "1.4.2",
