@@ -35,7 +35,7 @@
     "test:ci": "bun test --coverage --randomize --rerun-each=3"
   },
   "dependencies": {
-    "postcss-ekscss": "^0.0.15",
+    "postcss-ekscss": "^0.0.16",
     "stylelint-order": "^8.0.0"
   },
   "devDependencies": {
